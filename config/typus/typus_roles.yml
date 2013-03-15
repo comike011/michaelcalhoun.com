@@ -2,3 +2,4 @@
 
 admin:
   AdminUser: all
+  BlogPost: all

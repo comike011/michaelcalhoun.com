@@ -20,6 +20,7 @@ group :development, :test do
 end
 
 group :test do
+  gem 'spork'
   gem 'rspec'
   gem 'shoulda-matchers'
 end

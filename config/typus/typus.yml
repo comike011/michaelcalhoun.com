@@ -1,5 +1,4 @@
 # Use the README file as a reference to customize settings.
-
 AdminUser:
   fields:
     default: first_name, last_name, role, email, locale
@@ -13,3 +12,13 @@ AdminUser:
   search: first_name, last_name, email, role
   application: Admin
   description: Users Administration
+BlogPost:
+  fields:
+    default: title, body
+    list: title, body
+    search: title, body
+    description: Blog Post Administration
+  actions:
+    index: cleanup
+  application: Admin
+      

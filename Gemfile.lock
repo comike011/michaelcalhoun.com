@@ -175,6 +175,7 @@ DEPENDENCIES
   rspec-rails
   sass-rails (~> 3.2.3)
   shoulda-matchers
+  spork
   spork-rails
   typus
   uglifier (>= 1.0.3)
