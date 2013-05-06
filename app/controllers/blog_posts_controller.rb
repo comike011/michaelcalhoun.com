@@ -1,6 +1,7 @@
 class BlogPostsController < ApplicationController
 
   def index
+    #this is the index
     @blog_posts = BlogPost.all
   end
 
