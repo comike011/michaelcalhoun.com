@@ -3,3 +3,4 @@
 admin:
   AdminUser: all
   BlogPost: all
+  Page: all
