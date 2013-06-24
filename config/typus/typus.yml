@@ -21,4 +21,12 @@ BlogPost:
   actions:
     index: cleanup
   application: Admin
-      
+Page:
+  fields:
+    default: name, body
+    list: name, body
+    search: name, body
+    description: Page Administration
+  actions:
+    index: cleanup
+  application: Admin
