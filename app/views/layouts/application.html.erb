@@ -8,7 +8,23 @@
 </head>
 <body>
 
-<%= yield %>
+  <div id="wrap-header" class="wrap">
+    <section>
+      <h1>Michael (Mike) Calhoun</h1>
+    </section>
+  </div>
+
+  <div id="wrap-content" class="wrap">
+    <section>
+      <%= yield %>
+    </section>
+  </div>
+
+  <div id="wrap-footer" class="wrap">
+    <section>
+      <p>&copy;<%= Time.now.year %>&nbsp;Mike Calhoun</p>
+    </section>
+  </div>
 
 </body>
 </html>

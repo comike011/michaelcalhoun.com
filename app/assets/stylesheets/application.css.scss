@@ -12,3 +12,69 @@
  */
 @import "bourbon/bourbon";
 @import "neat/neat";
+
+@import "mixins";
+
+$darkBlue:    #355066;
+$lightBlue:   #8CB2BE;
+$gray:        #CAD2D3;
+$white:       #F0EDE8;
+$grayBlue:    #716C7A;
+$orange:      #B65900;
+$sans-serif: 'Helvetica Neue';
+
+
+
+@import "_mixins";
+@include register-font('silkscreen');
+
+html{
+  height: 100%
+}
+
+body{
+  background: $gray;
+  color: $grayBlue;
+  font-family:helvetica;
+  line-height:1.2em;
+  height: 95%;
+}
+
+a {
+  color: $grayBlue;
+}
+
+a:hover {
+  color: $orange;
+}
+
+p {
+}
+
+h1 {
+  color: $darkBlue;
+  font-size:3em;
+  @include use-registered-font('silkscreen');
+}
+
+h2{
+  color: $darkBlue;
+  font-size:2em;
+  @include use-registered-font('silkscreen');
+}
+
+section {
+  @include outer-container;
+}
+
+#wrap-content{
+  min-height:100%;
+}
+
+#wrap-footer{
+  clear:both;
+  font-size:.75em;
+  height:1em;
+  margin-top:-4em;
+  text-align:right;
+}

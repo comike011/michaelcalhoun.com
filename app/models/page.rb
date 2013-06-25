@@ -1,6 +1,6 @@
 class Page < ActiveRecord::Base
   extend FriendlyId
   friendly_id :name, use: :slugged
-  attr_accessible :body, :name
-
+  belongs_to :admin_user
+  attr_accessible :body, :name, :as => :admin
 end
