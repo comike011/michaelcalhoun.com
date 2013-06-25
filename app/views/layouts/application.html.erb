@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>MichaelcalhounCom</title>
+  <title>Michaelcalhoun.com</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
@@ -11,6 +11,7 @@
   <div id="wrap-header" class="wrap">
     <section>
       <h1>Michael (Mike) Calhoun</h1>
+      <p>&copy;<%= Time.now.year %>&nbsp;Mike Calhoun</p>
     </section>
   </div>
 
@@ -19,12 +20,5 @@
       <%= yield %>
     </section>
   </div>
-
-  <div id="wrap-footer" class="wrap">
-    <section>
-      <p>&copy;<%= Time.now.year %>&nbsp;Mike Calhoun</p>
-    </section>
-  </div>
-
 </body>
 </html>
