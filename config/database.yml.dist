@@ -1,17 +1,17 @@
 development:
   adapter: postgresql
-  database: michaelcalhoun_development
-  username: mcalhoun
+  database: 
+  username:
   password:
 
 test:
   adapter: postgresql
-  database: michaelcalhoun_test
-  username: mcalhoun
+  database: 
+  username: 
   password:
 
 production:
   adapter: postgresql
-  database: michaelcalhoun_production
-  username: mcalhoun
+  database: 
+  username: 
   password:
