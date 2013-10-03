@@ -1,9 +1,10 @@
 class AdminUser < ActiveRecord::Base
-  enable_as_typus_user
-  has_many :blog_posts
-  has_many :pages
+  # Include default devise modules. Others available are:
+  # :confirmable, :lockable, :timeoutable and :omniauthable
+  devise :database_authenticatable, 
+         :recoverable, :rememberable, :trackable, :validatable
 
-  def full_name
-    "#{first_name} #{last_name}"
-  end
+  # Setup accessible (or protected) attributes for your model
+  attr_accessible :email, :password, :password_confirmation, :remember_me
+  # attr_accessible :title, :body
 end
