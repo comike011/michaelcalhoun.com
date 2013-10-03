@@ -1,5 +1,4 @@
 class BlogPost < ActiveRecord::Base
-  attr_accessible :title, :body, :as => :admin
-  belongs_to :admin_user
+  attr_accessible :title, :body
   validates_presence_of :title
 end

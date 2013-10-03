@@ -1,4 +1,5 @@
 class BlogPostsController < ApplicationController
+  layout "blahg"
 
   def index
     #this is the index
