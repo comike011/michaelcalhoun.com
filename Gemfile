@@ -5,6 +5,7 @@ gem 'pg'
 gem 'friendly_id'
 gem 'activeadmin'
 gem 'ckeditor'
+gem 'will_paginate'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -20,6 +21,7 @@ group :development, :test do
   gem 'spork-rails'
   gem 'guard-spork'
   gem 'factory_girl_rails', "~> 4.0"
+  gem 'faker'
 end
 
 group :test do

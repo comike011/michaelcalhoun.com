@@ -1,9 +1,8 @@
 class BlogPostsController < ApplicationController
-  layout "blahg"
 
   def index
-    #this is the index
-    @blog_posts = BlogPost.all
+    #@blog_posts = BlogPost.all
+    @blog_posts = BlogPost.paginate(page: params[:page], order: "created_at DESC")
   end
 
   def show
