@@ -1,36 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Michael Calhoun [dot] com</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
+  <title>MichaelcalhounCom</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-  <div id="wrap-header" class="wrap">
-    <section>
-      <h1>Mike Calhoun</h1>
-    </section>
-  </div>
+<%= yield %>
 
-  <div id="wrap-content" class="wrap">
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <section>
-      <%= yield %>
-    </section>
-  </div>
-  <br />
-  <br />
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-44982461-1', 'michaelcalhoun.com');
-    ga('send', 'pageview');
-  </script>
 </body>
 </html>
